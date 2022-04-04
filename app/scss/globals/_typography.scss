@@ -1,0 +1,48 @@
+@use "../util" as *;
+@use "../globals/fonts" as *;
+
+:root {
+  font-family: $ff-fb;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  // line-height: 1.1;
+}
+
+.heading-L,.heading-M,.heading-S,.heading-XS{
+  font-weight: $fw-b;
+  text-transform: uppercase;
+}
+
+.heading-L{
+  font-size: rem(40);
+  letter-spacing: rem(2.5);
+}
+.heading-M{
+  font-size: rem(24);
+  letter-spacing: rem(1.5);
+}
+.heading-S{
+  font-size: rem(20);
+  letter-spacing: rem(1.25);
+}
+.heading-XS{
+  font-size: rem(16);
+  letter-spacing: rem(1);
+}
+.heading-BODY{
+  font-size: rem(14);
+  letter-spacing: rem(0.8);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--white);
+}

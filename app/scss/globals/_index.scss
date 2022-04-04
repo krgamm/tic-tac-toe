@@ -1,0 +1,16 @@
+@forward 'fonts';
+@forward 'colors';
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'layout';
+html{
+    height: 100%;
+}
+body{    
+    height: 100%;
+    background-color: var(--neutral-700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

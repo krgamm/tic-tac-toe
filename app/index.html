@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<link rel="stylesheet" href="/scss/style.css" />
+	<script defer src="/js/script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- New game menu start -->
+		<div class="hidden new-game-menu">
+			<img class="logo new-game-menu__logo" src="./assets/logo.svg" alt="logo">
+			<div class="new-game-menu__marker-picker">
+				<h1 class="heading-XS new-game-menu__h1">Pick Player 1's Marker</h1>
+				<div class="new-game-menu__marker-selection js-marker-selection">
+					<div class="button new-game-menu__button new-game-menu__button--light">
+						<div class="icon new-game-menu__icon new-game-menu__icon--x"></div>
+					</div>
+					<div class="button new-game-menu__button new-game-menu__button--dark">
+						<div class="icon new-game-menu__icon new-game-menu__icon--o"></div>
+					</div>
+				</div>
+				<h2 class="heading-BODY new-game-menu__h2">Remember: X goes first</h2>
+			</div>
+			<div class="button-group new-game-menu__button-group">
+				<a class="button heading-S new-game-menu__button new-game-menu__button--orange js-new-game-cpu"
+					href="">New Game
+					(vs CPU)</a>
+				<a class="button heading-S new-game-menu__button new-game-menu__button--teal js-new-game-player"
+					href="">New Game
+					(vs Player)</a>
+			</div>
+			<!-- New game menu end -->
+
+		</div>
+		<!-- Game board start -->
+		<div class="game-board">
+			<div class="game-board__nav">
+				<img class="logo game-board__logo" src="./assets/logo.svg" alt="logo">
+				<div class="button game-board__turn-indicator js-turn-indicator">
+					<div class="icon game-board__icon--x"></div>
+					<div class="hidden icon game-board__icon--o"></div>
+					<span class="heading-XS">Turn</span>
+				</div>
+				<div class="button game-board__restart-button js-restart-button">
+					<div class="icon game-board__icon--restart"></div>
+				</div>
+			</div>
+			<div class="game-board__tile-grid js-marker-grid">
+				<div id="tile-0" class="tile game-board__tile"></div>
+				<div id="tile-1" class="tile game-board__tile"></div>
+				<div id="tile-2" class="tile game-board__tile"></div>
+				<div id="tile-3" class="tile game-board__tile"></div>
+				<div id="tile-4" class="tile game-board__tile"></div>
+				<div id="tile-5" class="tile game-board__tile"></div>
+				<div id="tile-6" class="tile game-board__tile"></div>
+				<div id="tile-7" class="tile game-board__tile"></div>
+				<div id="tile-8" class="tile game-board__tile"></div>
+			</div>
+			<div class="game-board__score-tracker js-score-tracker">
+				<!-- flexible content -->
+				<div class="game-board__score game-board__score--left"></div>
+				<!-- flexible content -->
+				<div class="game-board__score game-board__score--ties"></div>
+				<!-- flexible content -->
+				<div class="game-board__score game-board__score--right"></div>
+			</div>
+			<div class="hidden game-board__prompt">
+				<h1 class="game-board__phrase">Winner, Loser, Tied, Restart</h1>
+				<div class="game-board__winner">
+					<!-- flexible content -->
+					<div class="icon game-board__winner-marker"></div>
+					<h2 class="game-board__h2">Takes the Round</h2>
+					<div class="button-group game-board__button-group">
+						<!-- flexible content -->
+						<a class="button game-board__button game-board__button--right js-game-board__button--left"
+							href="">Left</a>
+						<!-- flexible content -->
+						<a class="button game-board__button game-board__button--right js-game-board__button--right"
+							href="">Right</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Game board end -->
+</body>
+
+</html>
