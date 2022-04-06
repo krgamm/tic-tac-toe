@@ -91,3 +91,10 @@ game-board\_\_phrase--tied
 
 Restart
 game-board\_\_phrase--restart
+
+You can read the board matrix in one object, not sepearte objects
+
+This is the entire updateBoard
+row1:[value,value,value]
+row2:[value,value,value]
+row3:[value,value,value]
