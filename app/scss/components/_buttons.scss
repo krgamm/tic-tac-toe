@@ -1,14 +1,16 @@
-@use '../util' as *;
+@use "../util" as *;
 @use "../globals/fonts" as *;
 
-.button{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    border-radius: rem(10);
-    padding-top: rem(17);
-    padding-bottom: rem(25);
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: rem(10);
+  padding-top: rem(17);
+  padding-bottom: rem(25);
 
-
+  &:hover {
+    cursor: pointer;
+  }
 }

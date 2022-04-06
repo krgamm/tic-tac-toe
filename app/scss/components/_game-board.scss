@@ -27,6 +27,8 @@
     padding: rem(16);
     width: min-content;
     margin-left: auto;
+    box-shadow: inset 0 -4px 0 var(--drop-shadow-silver);
+
     .icon {
       background-color: var(--neutral-700);
       height: rem(20);
@@ -42,10 +44,68 @@
   row-gap: 21px;
   margin: rem(19) 0;
   .game-board__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 140px;
     width: 140px;
     background-color: var(--neutral-600);
     border-radius: rem(15);
     box-shadow: inset 0 -8px 0 var(--drop-shadow);
+    cursor: pointer;
+    .game-board__place-icon,
+    .game-board__hover-icon {
+      height: rem(64);
+      width: rem(64);
+      &--x {
+        background-color: var(--dark-teal);
+      }
+      &--o {
+        background-color: var(--dark-orange);
+      }
+    }
+    &--winner-x {
+      background-color: var(--dark-teal);
+      box-shadow: inset 0 -8px 0 var(--drop-shadow-teal);
+      .icon {
+        background-color: var(--neutral-700);
+      }
+    }
+    &--winner-o {
+      background-color: var(--dark-orange);
+      box-shadow: inset 0 -8px 0 var(--drop-shadow-orange);
+      .icon {
+        background-color: var(--neutral-700);
+      }
+    }
+  }
+}
+
+.game-board__score-tracker {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: rem(20);
+  .game-board__score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: rem(11) 0;
+    border-radius: rem(15);
+    color: var(--neutral-700);
+    span {
+      text-transform: uppercase;
+    }
+    &--left {
+      background-color: var(--dark-teal);
+    }
+    &--ties {
+      background-color: var(--neutral-200);
+    }
+    &--right {
+      background-color: var(--dark-orange);
+    }
   }
 }

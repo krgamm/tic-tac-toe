@@ -5,24 +5,38 @@
   height: rem(32);
   width: rem(32);
 }
+
 .new-game-menu__icon--x,
-.game-board__icon--x {
+.game-board__icon--x,
+.game-board__place-icon--x {
   mask: url(../assets/icon-x.svg) no-repeat center / contain;
   -webkit-mask: url(../assets/icon-x.svg) no-repeat center / contain;
 }
+.game-board__hover-icon--x {
+  mask: url(../assets/icon-x-outline.svg) no-repeat center / contain;
+  -webkit-mask: url(../assets/icon-x-outline.svg) no-repeat center / contain;
+}
 
 .new-game-menu__icon--o,
-.game-board__icon--o {
+.game-board__icon--o,
+.game-board__place-icon--o {
   mask: url(../assets/icon-o.svg) no-repeat center / contain;
   -webkit-mask: url(../assets/icon-o.svg) no-repeat center / contain;
 }
+.game-board__hover-icon--o {
+  mask: url(../assets/icon-o-outline.svg) no-repeat center / contain;
+  -webkit-mask: url(../assets/icon-o-outline.svg) no-repeat center / contain;
+}
+
 .game-board__icon--restart {
   mask: url(../assets/icon-restart.svg) no-repeat center / contain;
   -webkit-mask: url(../assets/icon-restart.svg) no-repeat center / contain;
 }
-.game-board__winner-marker {
+.prompt__winner-marker {
   mask: url(../assets/icon-o.svg) no-repeat center / contain;
   -webkit-mask: url(../assets/icon-o.svg) no-repeat center / contain;
+  height: rem(64);
+  width: rem(64);
 }
 
 .logo {

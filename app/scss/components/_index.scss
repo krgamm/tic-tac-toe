@@ -1,11 +1,11 @@
 // Example
-@forward 'component1';
-@forward 'buttons';
-@forward 'icons';
-@forward 'game-board';
-@forward 'new-game-menu';
+@forward "component1";
+@forward "buttons";
+@forward "icons";
+@forward "game-board";
+@forward "new-game-menu";
+@forward "result-modal";
 
 .hidden {
-	display: none;
-    
+  display: none;
 }
